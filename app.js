@@ -12,7 +12,7 @@ const initializeNewButtons = () => {
     const randomProduct = products.getRandomProduct();
     let randomProduct2 = products.getRandomProduct();
     // get a new product for #2 thats different than #1
-    while (randomProduct2.id === randomProduct.id ) {
+    while (randomProduct2.id === randomProduct.id) {
         randomProduct2 = products.getRandomProduct();
     }
     
