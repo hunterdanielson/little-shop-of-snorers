@@ -8,17 +8,19 @@
 <body>
     <h2>Session results: </h2>
     <h3>Session picked: </h3>
-    <p id="session-results-picked"></p>
+    <canvas id="session-results-picked"></canvas>
     <h3>Session displayed: </h3>
-    <div id="session-results-displayed"></div>
+    <canvas id="session-results-displayed"></canvas>
     <h2>Total results: </h2>
     <h3>All picked: </h3>
-    <div id="total-results-picked"></div>
+    <canvas id="total-results-picked"></canvas>
     <h3>All Displayed: </h3>
-    <div id="total-results-displayed"></div>
+    <canvas id="total-results-displayed"></canvas>
 
-    <button id="start-over-button">Start Over</button>
+    <button id="start-over-button">Start New Session</button>
+    <button id="reset-local-storage">Reset Local Storage</button>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="results.js" type="module"></script>
 </body>
 </html>
