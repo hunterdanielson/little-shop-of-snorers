@@ -8,13 +8,6 @@ const radioTags = document.querySelectorAll('input');
 const nextButton = document.getElementById('next-button');
 const products = new ProductArray(productData);
 
-console.log(products);
-// for future strech goal
-let numberOfChoices = 3;
-let totalChoices = 0;
-
-
-
 const initializeNewButtons = () => {
     const randomProduct = products.getRandomProduct();
     let randomProduct2 = products.getRandomProduct();
@@ -65,7 +58,6 @@ function addLocalDisplay(displayed) {
 function updateChoice() {
     // get the choice that was selected
     const selectedChoice = document.querySelector('input[type=radio]:checked');
-    console.log(selectedChoice.value);
     // get array from our local storage
     const storedPicks = getPicks();
     // add the value to local storage
