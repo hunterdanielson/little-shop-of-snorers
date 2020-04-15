@@ -1,8 +1,7 @@
 import { getPicks, getDisplayed, getTotalPicks, getTotalDisplayed } from '../local-storage-api.js';
 
 const startOverButton = document.getElementById('start-over-button');
-const resetLocalStorage= document.getElementById('reset-local-storage');
-
+const resetLocalStorage = document.getElementById('reset-local-storage');
 
 const localPicks = getPicks();
 const localDisplay = getDisplayed();
